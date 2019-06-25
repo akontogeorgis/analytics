@@ -1,0 +1,87 @@
+
+.pie_chart_container{
+    display:inline-block;
+    width:37%;
+    height:40vh;
+    margin-bottom:2.5%;
+    border: 1px solid #cdcccb;
+    border-radius: 10px;
+    background-color:#FDFDFD;
+}
+
+.header_pie_chart{
+    border-bottom: 1px solid #FDFDFD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#FDFDFD;
+    height:4.5vh;
+}
+
+.header_pie_chart h3{
+    color:#535250;
+    display:inline-block;
+    font-weight:normal;
+    margin-bottom:1vh;
+    margin-top:2vh;
+    margin-left:1vw;
+    width:5vw;
+}
+
+.pie_chart_buttons_container{
+    float:right;
+    width:auto;
+    margin-right:1vw;
+    margin-top:1vw;
+}
+
+.menu_pie_chart_buttons{
+    display:inline-block;
+    color:#535250;
+    cursor:pointer;
+    border:none;
+    background-color:#FDFDFD;
+}
+
+
+.menu_pie_chart{
+    display:inline-block;
+    float:right;
+    width:25vw;
+
+}
+
+.header_pie_chart+hr{
+    color:#535250;
+    width:96%;
+    margin:0% 1vw;
+}
+
+.pie_chart{
+    border-top: 1px solid #FDFDFD;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:30vh;
+}
+
+@media only screen and (max-width: 980px) {
+    .pie_chart_container {
+        width: 100%;
+    }
+    .header_pie_chart{
+        height:4vh;
+    }
+}
+
+@media only screen and (max-width: 874px) {
+    .menu_pie_chart {
+        width: 50vw;
+
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    .menu_pie_chart {
+        width: 70vw;
+
+    }
+}

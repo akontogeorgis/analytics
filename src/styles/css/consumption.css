@@ -1,0 +1,74 @@
+
+.consumption_container{
+    display:inline-block;
+    width:37.2%;
+    height:40vh;
+    margin-bottom:2.5%;
+}
+
+.header_yearly_overview{
+    border-bottom: 1px solid #FDFDFD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#FDFDFD;
+}
+
+.header_monthly_overview{
+    border-bottom: 1px solid #FDFDFD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#FDFDFD;
+}
+
+.yearly_overview h3,.monthly_overview h3{
+    color:#535250;
+    display:inline-block;
+    font-weight:normal;
+    margin-bottom:0vh;
+    margin-top:2vh;
+    margin-left:1vw;
+}
+
+.yearly_overview{
+    margin-bottom:0.5vh;
+    background-color:#FDFDFD;
+    border: 1px solid #cdcccb;
+    border-radius:10px;
+    height:22vh;
+}
+
+.yearly_overview hr, .monthly_overview hr{
+    color:#535250;
+    width:96%;
+    margin:0% 1vw;
+    margin-bottom:1vh;
+}
+
+.monthly_overview{
+    background-color:#FDFDFD;
+    border: 1px solid #cdcccb;
+    border-radius:10px;
+    height:17.3vh;
+}
+
+
+
+.consumption_info{
+    background-color:#E5E4E0;
+    text-align:center;
+    padding:1%;
+    margin:2%;
+}
+
+.consumption_value{
+    color:#1a8cff;
+    font-weight:bold;
+}
+
+@media only screen and (max-width: 980px) {
+    .consumption_container {width: 100%;}
+}
+
+@media only screen and (max-width: 980px) {
+    .yearly_overview,.monthly_overview {height: auto;}
+}

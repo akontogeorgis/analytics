@@ -1,248 +1,49 @@
 body{
   background-color:	#E6E5E0;
   overflow-x: hidden;
-}
-
-.logo{
-  background-color:#B03280;
-  width:15vw;
-  height: 8vh;
-  text-align:center;
-}
-
-
-.logo_image{
-  max-width: 85%;
-  height: 85%;
-  margin:2%;
-}
-
-.header{
-  background-color:#535250;
-  height: 8vh;
-  width:100vw;
-  position:absolute;
-  left:0;
-  top:0;
-}
-
-nav{
-  width:80vw;
-  height:50%;
-  position:absolute;
-  left:15%;
-  top:25%;
-}
-
-.home_image{
-  margin-top:0.5%;
-  margin-left:2%;
-  max-width: 1.5vw;
-  cursor:pointer;
-  vertical-align:middle;
-}
-
-.nav_div{
-  margin:0.5%;
-  float:right;
-  color:#A6A5A3;
-  font-size:large;
-  cursor:pointer;
-  width:25%;
-}
-
-.logout_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-.settings_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.bar_image{
-  width:2vw;
-  vertical-align:middle;
-}
-
-.calendar_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.eye_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.buildings_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.search_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.stats_image{
-  width:1.5vw;
-  vertical-align:middle;
-}
-
-.nav_buttons{
-  background:none;
-  border:none;
-  color:#A6A5A3;
-  font-size:large;
-  cursor:pointer;
-  margin-right:10%;
-}
-
-.tabs_bar{
-  margin-top:12vh;
-  margin-left:3vw;
-  height:100%;
-  border-bottom:solid 2px #545351;
-}
-
-
-.tabs_bar h2{
-  display:inline;
-}
-
-.tabs_buttons{
-  background-color:#EDEDEB;
-  cursor:pointer;
-  margin:0.5%;
-  margin-bottom:0px;
-  font-size:150%;
-  border-radius:10px 10px 0 0 ;
-  width:15vw;
-  text-align: center;
-  padding:0.5vw;
-  display:inline-block;
-}
-
-.overview_tab{
-  background-color:#545351;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content{
-  margin-top:3vh;
+  width:94vw;
+  margin:3vh 3vh;
+}
+
+@media only screen and (max-width: 1450px) {
+  body {
+    font-size:13px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  body {
+    font-size:11px;
+  }
+}
+
+@media only screen and (max-width: 954px) {
+  body {
+    font-size:9px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .tabs_buttons span{
+    display:none;
+  }
+  .tabs_buttons img{
+    width:3vw;
+  }
+
+}
+
+@media only screen and (max-width: 1130px) {
+  .content {
+    margin:1vh;
+  }
 }
 
 
-.column_chart{
-  width:40%;
-  margin:0 4%;
-  float:left;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-}
 
-.header_pie_chart{
-  width:40%;
-  height:4vh;
-  margin:0% 4%;
-  float:left;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-  background-color:#FDFDFD;
-  display:inline-block;
-}
 
-.menu_pie_chart button{
-  display:inline-block;
-  margin:1%;
-  margin-left:1vw;
-  color:#535250;
-  cursor:pointer;
 
-}
-
-.menu_pie_chart{
-  display:inline-block;
-  float:right;
-}
-
-.header_pie_chart h3{
-  margin-left:1vw;
-  color:#535250;
-  display:inline-block;
-}
-
-.header_pie_chart hr{
-  color:#535250;
-}
-
-.pie_chart{
-  width:40%;
-  margin:0 4%;
-  float:left;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-  display:inline-block;
-}
-
-.header_heatMap_chart{
-  color:#535250;
-}
-
-.heatMap_chart{
-  width:40%;
-  margin:2% 4%;
-  float:left;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-}
-
-.consumption h3{
-  color:#535250;
-  display:inline;
-}
-
-.yearly_overview{
-  width:39%;
-  margin:2% 4% 1% 4%;
-  padding:0.5%;
-  float:left;
-  background-color:#FDFDFD;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-}
-
-.monthly_overview{
-  width:39%;
-  margin-left:4%;
-  margin-bottom:4%;
-  padding:0.5%;
-  float:left;
-  background-color:#FDFDFD;
-  border: 1px solid #cdcccb;
-  border-radius:10px;
-}
-
-.consumption_info{
-  background-color:#E5E4E0;
-  text-align:center;
-  padding:1%;
-}
-
-.consumption_value{
-  color:#1a8cff;
-  font-weight:bold;
-}
-
-@media only screen and (max-width: 950px) {
-  .column_chart {width: 90%;margin-bottom:2%;}
-  .pie_chart {width: 90%;}
-  .heatMap_chart {width: 90%;}
-  .consumption {width: 99%;}
-  .yearly_overview {width: 90%;margin-top:0%;}
-  .monthly_overview {width: 90%;}
-}
-
-@media only screen and (max-width: 1420px) {
-  .nav_div{width:40%;}
-}
